@@ -1,0 +1,27 @@
+header {
+  padding: 10px 7%;
+  display: flex;
+  justify-content: space-between;
+  background-color: $lightGray;
+  .logo {
+    color: $color;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .menu {
+    display: flex;
+    // gap: 30px;
+    a {
+      color: $color;
+      padding: 10px 25px;
+      &:hover {
+        color: $lightGray;
+        background-color: $color;
+      }
+      &:last-child {
+        background-color: $color;
+        color: $lightGray;
+      }
+    }
+  }
+}

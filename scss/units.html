@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-size: 16px;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      h1.fixed {
+        font-size: 48px;
+      }
+      @media screen and (max-width: 768px) {
+        body {
+          font-size: 10px;
+        }
+
+        h1.fixed {
+          font-size: 30px;
+        }
+      }
+      .banner {
+        height: 60vh;
+        width: 80vw;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Hello</h1>
+    <h1 class="fixed">Namaste</h1> -->
+
+    <div class="banner">
+      <img
+        style="height: 100vh"
+        src="https://picsum.photos/id/35/300/300"
+        alt=""
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        animation-name: movetoright;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease;
+      }
+
+      @keyframes movetoright {
+        0% {
+          transform: translateX(0px) scale(1) rotate(0deg);
+          background-color: orange;
+          border-radius: 0px;
+        }
+
+        33% {
+          transform: translateY(600px) scale(2) rotate(45deg);
+          background-color: blue;
+          border-radius: 100%;
+        }
+
+        66% {
+          transform: translateX(1000px) scale(3) rotate(360deg);
+          background-color: green;
+          border-radius: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="box">
+      <img src="https://picsum.photos/id/43/100/100" alt="" />
+    </h3>
+  </body>
+</html>

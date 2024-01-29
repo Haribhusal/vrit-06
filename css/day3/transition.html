@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .banner {
+        height: 400px;
+        width: 100%;
+        background-color: yellow;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in;
+      }
+      .banner:hover {
+        background-color: green;
+        width: 50%;
+      }
+      .box {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        /* animation: moveToRight 1s ease;
+        animation-iteration-count: infinite;
+         */
+        animation-name: moveToRight;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-play-state: paused;
+      }
+
+      @keyframes moveToRight {
+        25% {
+          transform: translateX(0) translateX(0) rotate(0) scale(0.5);
+          background-color: yellow;
+        }
+        50% {
+          transform: translateX(1000px) translateY(400px) rotate(360deg)
+            scale(3);
+          background-color: green;
+        }
+
+        75% {
+          transform: translateX(500px) translateY(100px) rotate(45deg)
+            scale(0.5);
+          background-color: purple;
+        }
+
+        100% {
+          transform: translateX(800px) translateY(700px) rotate(180deg) scale(2);
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="myAnimation">
+      <div class="box"></div>
+      <div class="banner"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="myhead">
+      <div class="logo">L</div>
+      <div class="menu">
+        <button id="close">Close Menu</button>
+        <nav>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+        </nav>
+      </div>
+      <div class="buttons">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
+      <button id="mybtn">
+        <img
+          style="height: 40px"
+          src="https://cdn.iconscout.com/icon/free/png-256/free-bars-1440391-1216351.png"
+          alt=""
+        />
+      </button>
+    </header>
+    <main>
+      <section>
+        <div class="image">
+          <img src="https://picsum.photos/id/52/500/500" alt="" />
+        </div>
+        <div class="text">
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
+            explicabo?
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dignissimos, ab, hic sint nam unde aperiam quia aut provident in
+            repudiandae sapiente officia dolore debitis facilis. Maxime sequi
+            blanditiis autem vero!
+          </p>
+          <button>Read More...</button>
+        </div>
+      </section>
+      <section>
+        <div class="image">
+          <img src="https://picsum.photos/id/52/500/500" alt="" />
+        </div>
+        <div class="text">
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
+            explicabo?
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dignissimos, ab, hic sint nam unde aperiam quia aut provident in
+            repudiandae sapiente officia dolore debitis facilis. Maxime sequi
+            blanditiis autem vero!
+          </p>
+          <button>Read More...</button>
+        </div>
+      </section>
+      <section>
+        <div class="image">
+          <img src="https://picsum.photos/id/52/500/500" alt="" />
+        </div>
+        <div class="text">
+          <h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae,
+            explicabo?
+          </h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Dignissimos, ab, hic sint nam unde aperiam quia aut provident in
+            repudiandae sapiente officia dolore debitis facilis. Maxime sequi
+            blanditiis autem vero!
+          </p>
+          <button>Read More...</button>
+        </div>
+      </section>
+
+      <section class="services">
+        <article>
+          <div class="image">
+            <img src="https://picsum.photos/id/52/500/500" alt="" />
+          </div>
+          <div class="text">
+            <h3>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae, explicabo?
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos, ab, hic sint nam unde aperiam quia aut provident in
+              repudiandae sapiente officia dolore debitis facilis. Maxime sequi
+              blanditiis autem vero!
+            </p>
+            <button>Read More...</button>
+          </div>
+        </article>
+        <article>
+          <div class="image">
+            <img src="https://picsum.photos/id/52/500/500" alt="" />
+          </div>
+          <div class="text">
+            <h3>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae, explicabo?
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos, ab, hic sint nam unde aperiam quia aut provident in
+              repudiandae sapiente officia dolore debitis facilis. Maxime sequi
+              blanditiis autem vero!
+            </p>
+            <button>Read More...</button>
+          </div>
+        </article>
+        <article>
+          <div class="image">
+            <img src="https://picsum.photos/id/52/500/500" alt="" />
+          </div>
+          <div class="text">
+            <h3>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestiae, explicabo?
+            </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Dignissimos, ab, hic sint nam unde aperiam quia aut provident in
+              repudiandae sapiente officia dolore debitis facilis. Maxime sequi
+              blanditiis autem vero!
+            </p>
+            <button>Read More...</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script>
+      let header = document.getElementById("myhead");
+      let btn = document.getElementById("mybtn");
+      let btnClose = document.getElementById("close");
+
+      btn.addEventListener("click", function () {
+        header.classList.add("openMenu");
+      });
+      btnClose.addEventListener("click", function () {
+        header.classList.remove("openMenu");
+      });
+    </script>
+  </body>
+</html>

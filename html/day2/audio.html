@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <audio src="audio.mp3" class="testName" id="sampleAudio" controls></audio>
+    <button id="play">Play the sound</button>
+    <button id="pause">Pause the sound</button>
+
+    <script>
+      let mysound = document.getElementById("sampleAudio");
+
+      let playbtn = document.getElementById("play");
+      let pauseBtn = document.getElementById("pause");
+
+      playbtn.addEventListener("click", function () {
+        mysound.play();
+      });
+
+      pauseBtn.addEventListener("click", function () {
+        mysound.pause();
+      });
+    </script>
+  </body>
+</html>

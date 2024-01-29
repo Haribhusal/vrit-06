@@ -1,0 +1,29 @@
+h1 {
+  color: orange;
+  background-color: black;
+  font-size: 100px;
+  margin: 20px;
+  text-decoration: underline;
+}
+
+/* this way of providing styles to html pages is called external css */
+
+#greet {
+  color: blue;
+}
+.box.nepal.hello {
+  background-color: aqua;
+}
+
+.box.nepal {
+  background-color: black;
+}
+.box2 {
+  background-color: blueviolet;
+}
+.box {
+  height: 100px;
+  background-color: red;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}

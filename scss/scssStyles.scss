@@ -1,0 +1,9 @@
+@import "variables";
+@import "mixins";
+@import "settings";
+@import "header";
+
+button {
+  @include buttonStyles(yellow, 0px);
+}
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        height: 100px;
+      }
+      .box::first-line {
+        color: red;
+      }
+      .box::first-letter {
+        background-color: black;
+        color: white;
+        padding: 10px;
+      }
+      .box span {
+        color: red;
+      }
+      .banner {
+        padding: 30px;
+        background-image: url("https://picsum.photos/id/24/200/200");
+      }
+      .banner::before {
+        content: "";
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        border-radius: 30%;
+
+        transform: rotate(45deg);
+        left: 0%;
+        animation: testAnimation 1s ease infinite;
+      }
+      .banner::after {
+        content: "";
+      }
+
+      @keyframes testAnimation {
+        from {
+          background-color: green;
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="box">
+      Welcome ipsum dolor sit, amet consectetur adipisicing elit. Beatae illo
+      aliquid hic dignissimos, <span>Google</span> doloremque dolorum? Eum,
+      facilis! Molestias sapiente, ipsa est assumenda veritatis quae error?
+      Voluptates dolore dolorum quis minima.
+    </div> -->
+
+    <div class="banner">
+      1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut ullam nihil
+      nam nobis. Sunt a dicta repellendus, ipsam explicabo reiciendis doloribus
+      nam nobis. Sunt a dicta repellendus, ipsam explicabo reiciendis doloribus
+      nam nobis. Sunt a dicta repellendus, ipsam explicabo reiciendis doloribus
+      nam nobis. Sunt a dicta repellendus, ipsam explicabo reiciendis doloribus
+      eveniet deleniti mollitia eaque consequatur ratione ipsum fuga quas! 2
+    </div>
+  </body>
+</html>

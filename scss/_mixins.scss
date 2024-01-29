@@ -1,0 +1,15 @@
+@mixin buttonStyles($bgcolor, $radius) {
+  padding: 15px 30px;
+  border-radius: $radius;
+  background-color: $bgcolor;
+  border: 2px solid transparent;
+  color: $lightGray;
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $lightGray;
+    color: $color;
+    border-color: $color;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 100px;
+  }
+}
