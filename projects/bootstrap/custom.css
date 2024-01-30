@@ -1,5 +1,5 @@
 body {
-  background-color: red;
+  background-color: rgb(52, 15, 15);
 }
 
 .custom_navbar {
@@ -23,5 +23,5 @@ body {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .btn {
-  background-color: orange;
+  background-color: rgb(225, 209, 178);
 }
