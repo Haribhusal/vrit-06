@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="images"></div>
+    <!-- <div id="demo"></div> -->
+    <!-- <button id="myBtn">Stop the time</button> -->
+    <!-- <script src="settimeout.js"></script> -->
+
+    <script>
+      let imageWrapper = document.querySelector(".images");
+      async function fetchData() {
+        try {
+          const result = await fetch(
+            "https://jsonplaceholder.typicode.com/photos"
+          );
+          const data = await result.json();
+          data.forEach(function (item) {
+            // var image = new Image();
+            // image.src = item.url;
+            document.querySelector(".images").appendChild(image);
+          });
+
+          // console.log(data);
+
+          // let thumbnails = data.map((obj) => obj.thumbnailUrl);
+          // console.log(thumbnails);
+
+          // for (let i = 0; i < thumbnails.length; i++) {
+          //   // imageWrapper.append(`<img src=${thumbnails[i]}/>`);
+          //   imageWrapper.innerHTML = `<img src=${thumbnails[i]}/>`;
+          // }
+
+          // let images = data.map((item) => item.url);
+          // images.map((url) => {
+          //   //   console.log(images);
+          //   document.querySelector(
+          //     ".images"
+          //   ).appendChild = `<img  src=${url}/>`;
+          // });
+        } catch (error) {
+          console.error("Error fetching data:", error);
+        }
+      }
+
+      fetchData();
+    </script>
+  </body>
+</html>
