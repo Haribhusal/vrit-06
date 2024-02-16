@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .active {
+        background-color: red;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="link" href="#">Link 1</a>
+        <a class="link" href="#">Link 2</a>
+        <a class="link" href="#">Link 2</a>
+        <a class="link" href="#">Link 2</a>
+      </nav>
+    </header>
+
+    <script>
+      let links = document.querySelectorAll("header nav .link");
+      console.log(links);
+
+      for (let i = 0; i < links.length; i++) {
+        console.log(links[i]);
+        links[i].addEventListener("click", function () {
+          links[i].classList.toggle("active");
+        });
+      }
+
+      //   link1.classList.add("active");
+    </script>
+  </body>
+</html>
