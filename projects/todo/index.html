@@ -16,20 +16,63 @@
         <h1><i class="las la-microchip"></i> My Todo App</h1>
       </div>
       <div class="input">
-        <form>
-          <input type="text" placeholder="Enter todo..." />
-          <button type="submit">
+        <div class="form">
+          <input type="text" id="inputText" placeholder="Enter todo..." />
+          <button onclick="handleSubmit()">
             <i class="lab la-telegram-plane"></i>
           </button>
-        </form>
+        </div>
       </div>
       <div class="list">
-        <ul>
-          <li>Go to market</li>
-          <li>Buy a Keyboard</li>
-          <li>Buy a Mouse</li>
+        <ul id="items">
+          <li>
+            Go to market <button><i class="las la-trash"></i></button>
+          </li>
+          <li>
+            Buy a Keyboard <button><i class="las la-trash"></i></button>
+          </li>
+          <li>
+            Buy a Mouse <button><i class="las la-trash"></i></button>
+          </li>
+          <li>
+            Buy a Mouse <button><i class="las la-trash"></i></button>
+          </li>
         </ul>
       </div>
     </div>
+
+    <script>
+      let data = [
+        {
+          id: 1,
+          text: "Go to market",
+          isCompleted: false,
+        },
+        {
+          id: 2,
+          text: "Buy Keyboard",
+          isCompleted: false,
+        },
+        {
+          id: 3,
+          text: "Buy a Mouse",
+          isCompleted: false,
+        },
+        {
+          id: 4,
+          text: "Buy a Card",
+          isCompleted: false,
+        },
+      ];
+
+      const handleSubmit = () => {
+        let field = document.getElementById("inputText");
+        if (field.value !== "") {
+          data = [...data, { id: 123, text: field.value, isCompleted: false }];
+        }
+        console.log(data);
+        field.value = "";
+      };
+    </script>
   </body>
 </html>
